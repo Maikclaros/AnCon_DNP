@@ -1,0 +1,83 @@
+,tipo_de_contrato,estado_contrato,modalidad_de_contratacion,valor_del_contrato,numero_de_contratos,porcentaje
+0,Otro,Modificado,Contratación directa,2915620385554,13,0.25%
+1,Prestación de servicios,En ejecución,Contratación directa,151203236610,2251,42.66%
+2,Prestación de servicios,Modificado,Contratación directa,50004678718,885,16.77%
+3,Prestación de servicios,Activo,Contratación directa,45510168788,501,9.49%
+4,Prestación de servicios,Cerrado,Contratación directa,39514721706,466,8.83%
+5,Otro,En ejecución,Contratación régimen especial,38140411538,158,2.99%
+6,Otro,terminado,Contratación directa,33774416893,18,0.34%
+7,Prestación de servicios,cedido,Contratación directa,26037440120,336,6.37%
+8,Otro,Modificado,Contratación régimen especial,25505430088,116,2.2%
+9,Obra,Modificado,Contratación directa,17123719328,1,0.02%
+10,Prestación de servicios,terminado,Contratación directa,16899300813,173,3.28%
+11,Consultoría,terminado,Concurso de méritos abierto,16745728994,21,0.4%
+12,Otro,terminado,Contratación régimen especial,11757513004,25,0.47%
+13,Otro,Activo,Contratación régimen especial,11520533540,30,0.57%
+14,Otro,En ejecución,Contratación directa,10204167929,15,0.28%
+15,Compraventa,terminado,Selección abreviada subasta inversa,9527984344,5,0.09%
+16,Consultoría,En ejecución,CCE-20-Concurso_Meritos_Sin_Lista_Corta_1Sobre,7307382210,11,0.21%
+17,Otro,Cerrado,Contratación directa,6238605621,5,0.09%
+18,Suministros,Modificado,Contratación directa,5453613442,1,0.02%
+19,Consultoría,Modificado,CCE-20-Concurso_Meritos_Sin_Lista_Corta_1Sobre,5105100000,4,0.08%
+20,Arrendamiento de inmuebles,terminado,Contratación directa,4433707488,10,0.19%
+21,Prestación de servicios,Modificado,Licitación pública,4396862236,1,0.02%
+22,Prestación de servicios,En ejecución,Licitación pública,4029724608,1,0.02%
+23,Compraventa,Modificado,Selección abreviada subasta inversa,3757324300,1,0.02%
+24,Compraventa,Activo,Selección abreviada subasta inversa,3253945824,3,0.06%
+25,Consultoría,En ejecución,Concurso de méritos abierto,2982124150,7,0.13%
+26,Suministros,Modificado,Selección abreviada subasta inversa,2698944962,1,0.02%
+27,Seguros,Modificado,Selección Abreviada de Menor Cuantía,2172366365,3,0.06%
+28,Suministros,En ejecución,Selección abreviada subasta inversa,2000000000,1,0.02%
+29,Arrendamiento de inmuebles,En ejecución,Contratación directa,1900868968,5,0.09%
+30,Prestación de servicios,Activo,Contratación régimen especial,1864037077,16,0.3%
+31,Seguros,terminado,Licitación pública,1486800628,1,0.02%
+32,Arrendamiento de inmuebles,Modificado,Contratación directa,1486028478,4,0.08%
+33,Prestación de servicios,En ejecución,Contratación régimen especial,1246954992,17,0.32%
+34,Otro,Cerrado,Contratación régimen especial,1240796541,9,0.17%
+35,Compraventa,En ejecución,Selección abreviada subasta inversa,1148071356,3,0.06%
+36,Consultoría,terminado,CCE-20-Concurso_Meritos_Sin_Lista_Corta_1Sobre,1074473000,2,0.04%
+37,Prestación de servicios,terminado,Selección abreviada subasta inversa,967249844,2,0.04%
+38,Seguros,Activo,Selección Abreviada de Menor Cuantía,923309589,1,0.02%
+39,Compraventa,En ejecución,Selección Abreviada de Menor Cuantía,919257318,1,0.02%
+40,Otro,terminado,Selección abreviada subasta inversa,862906500,2,0.04%
+41,Consultoría,Cerrado,Concurso de méritos abierto,779173233,2,0.04%
+42,Prestación de servicios,En ejecución,Mínima cuantía,671603792,29,0.55%
+43,Prestación de servicios,Modificado,Contratación régimen especial,654869052,9,0.17%
+44,Prestación de servicios,terminado,Mínima cuantía,616669935,25,0.47%
+45,Otro,terminado,Licitación pública,611296063,1,0.02%
+46,Prestación de servicios,Modificado,Mínima cuantía,590451677,12,0.23%
+47,Compraventa,terminado,Mínima cuantía,552791534,11,0.21%
+48,Prestación de servicios,terminado,Selección Abreviada de Menor Cuantía,483295903,1,0.02%
+49,Seguros,Cerrado,Licitación pública,412012233,1,0.02%
+50,Compraventa,En ejecución,Mínima cuantía,337479674,10,0.19%
+51,Prestación de servicios,Modificado,Selección Abreviada de Menor Cuantía,316322448,1,0.02%
+52,Prestación de servicios,En ejecución,Selección abreviada subasta inversa,255672143,1,0.02%
+53,Prestación de servicios,Modificado,Selección abreviada subasta inversa,222609771,1,0.02%
+54,Prestación de servicios,terminado,Contratación régimen especial,217854538,2,0.04%
+55,Consultoría,En ejecución,Mínima cuantía,184999660,2,0.04%
+56,Otro,En ejecución,Selección abreviada subasta inversa,179172112,1,0.02%
+57,Arrendamiento de muebles,terminado,Selección abreviada subasta inversa,154024500,1,0.02%
+58,Prestación de servicios,Activo,Selección Abreviada de Menor Cuantía,140000000,1,0.02%
+59,Prestación de servicios,Activo,Selección abreviada subasta inversa,138140000,1,0.02%
+60,Obra,Modificado,Contratación régimen especial,137606700,1,0.02%
+61,Suministros,Modificado,Mínima cuantía,137458495,2,0.04%
+62,Seguros,En ejecución,Mínima cuantía,113499698,2,0.04%
+63,Seguros,Activo,Mínima cuantía,104869374,1,0.02%
+64,Suministros,terminado,Mínima cuantía,101781129,3,0.06%
+65,Prestación de servicios,Suspendido,Contratación directa,98311946,2,0.04%
+66,Compraventa,Activo,Mínima cuantía,75918875,5,0.09%
+67,Prestación de servicios,Activo,Mínima cuantía,75299400,2,0.04%
+68,Compraventa,Cerrado,Mínima cuantía,62719377,2,0.04%
+69,Consultoría,terminado,Mínima cuantía,55144515,2,0.04%
+70,Otro,terminado,Mínima cuantía,53813170,3,0.06%
+71,Seguros,Modificado,Mínima cuantía,53667264,1,0.02%
+72,Suministros,Activo,Mínima cuantía,49998371,2,0.04%
+73,Compraventa,Modificado,Mínima cuantía,46791100,2,0.04%
+74,Suministros,En ejecución,Mínima cuantía,40749887,2,0.04%
+75,Otro,Cerrado,Mínima cuantía,32511140,1,0.02%
+76,Otro,Activo,Mínima cuantía,32388727,1,0.02%
+77,Servicios financieros,Modificado,Contratación directa,24800000,1,0.02%
+78,No Especificado,En ejecución,Contratación directa,9866662,1,0.02%
+79,Otro,En ejecución,Mínima cuantía,2678690,1,0.02%
+80,Otro,Activo,Contratación directa,0,1,0.02%
+81,Comodato,terminado,Contratación directa,0,1,0.02%
