@@ -4,7 +4,9 @@ En el proyecto realizado, se pretende hacer un análisis de los contratos electr
 
 
 ## _INSTALACIONES BÁSICAS_
-1. Clona el repositorio: 'https://github.com/Maikclaros/AnCon_Mintic.git'
+1. Clona el repositorio: 'https://github.com/Maikclaros/AnCon_Mintic.git' y se selecciona 
+    ```Python
+   > ('../AnCon_DNP/codigo/preprocesamiento/Procesamiento.ipynb')
 2. Instala la dependencia 'nbformat': 
     ```Python
     pip install --upgrade nbformat
@@ -26,7 +28,7 @@ En el proyecto realizado, se pretende hacer un análisis de los contratos electr
 * Se definió el siguiente módulo de datos para el trabajo: 
 
     ```Python
-    > DF_contratos = pd.read_csv('../../datos/Raw/contratos_dnp_2020.csv')
+    > DF_contratos = pd.read_csv('../AnCon_DNP/datos/Raw/contratos_dnp_2020.csv')
 
 ## _GRÁFICOS_
 En el proceso pudimos encontrar la siguiente información con los gráficos adjuntos:
@@ -48,8 +50,8 @@ Para mayor información sobre los contratos y proceso de adjudicación de los mi
 ### Desarrolladores: 
 
 - Michael Claros (@Maikclaros)
-- Karen Henríquez ()
-- José Sebastián Cubillos ()
+- Karen Henríquez (@karenhenriquez99)
+- José Sebastián Cubillos (@SejeroCuco)
 - Daniela Morales (@danimo92)
 
 ## _ESTADO DEL PROYECTO_
