@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Cargar el modelo y realizar predicciones
 def predict_clusters(data):
     # Cargar el modelo previamente entrenado
-    model_path = 'app\modelo_cluster.pkl'
+    model_path = 'datos\model\modelo_cluster.pkl'
     pipeline = joblib.load(model_path)
 
     # Obtener las etiquetas de cluster
