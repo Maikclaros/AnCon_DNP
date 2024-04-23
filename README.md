@@ -47,22 +47,111 @@ En el proyecto realizado, se pretende hacer un análisis de los contratos electr
 3. Instala la dependencia 'plotly': 
     ```Python
     pip install plotly
+
 ## _EJECUCIÓN_
-* Ejecute el script principal 'pre_procesamiento.ipynb'
-* Importe las siguiente librerías:
+**Librerías Utilizadas:**
+- Flask: Para el desarrollo de la aplicación web.
+- Joblib: Para guardar y cargar modelos entrenados.
+- Pandas: Para manipulación de datos.
+- DBSCAN: Algoritmo de clustering 
+- KMeans: Algoritmo de clustering 
+- SimpleImputer: Para imputar valores faltantes en los datos.
+- StandardScaler: Para estandarizar las características numéricas.
+- OneHotEncoder: Para codificar variables categóricas.
+- ColumnTransformer: Para aplicar transformaciones específicas a columnas seleccionadas.
+- Os: Para operaciones relacionadas con el sistema operativo.
+- Numpy: Para operaciones matemáticas y manipulación de matrices.
+- KneeLocator: Para encontrar el “codo” en una gráfica.
+- Matplotlib: Para visualización de datos.
+- Sklearn: Biblioteca de aprendizaje automático
 
-    ```Python
+### Proyecto de Modelado y Preprocesamiento de Datos
 
-   > import pandas as pd
-   > import seaborn as sns
-   > import matplotlib.pyplot as plt
-   > import plotly.express as px
-   > import nbformat
+Este proyecto consta de tres carpetas principales: `app`, `código`, y `datos`. Cada una contiene componentes específicos para el desarrollo, modelado y preprocesamiento de datos.
 
-* Se definió el siguiente módulo de datos para el trabajo: 
+---
 
-    ```Python
-    > DF_contratos = pd.read_csv('../AnCon_DNP/datos/Raw/contratos_dnp_2020.csv')
+#### 1. App
+
+La carpeta `app` contiene el código para la aplicación web desarrollada utilizando Flask. Permite interactuar con el modelo entrenado y realizar consultas sobre los datos.
+
+
+```python
+from flask import Flask, jsonify, render_template, request
+import joblib
+import pandas as pd
+```
+
+#### 2. Código
+
+La carpeta `código` está dividida en 3 secciones principales: `Modelado` y `Preprocesamiento`.
+
+##### Modelado
+
+En la sección de `Modelado`, se encuentra el código para construir el pipeline y realizar pruebas sobre el modelo.
+
+**Librerías Utilizadas en el Pipeline:**
+
+
+```python
+import pandas as pd
+from sklearn.cluster import DBSCAN, KMeans
+from sklearn.pipeline import Pipeline
+from sklearn.impute import SimpleImputer
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
+from sklearn.compose import ColumnTransformer
+import os
+import joblib
+import numpy as np
+from kneed import KneeLocator
+import matplotlib.pyplot as plt
+```
+
+**Test:**
+
+Para probar el pipeline construido se necesitan las librerías joblib y pandas, las cuales se cargaron previamente.
+
+##### Preprocesamiento
+
+La sección de `Preprocesamiento` está organizada en tres archivos: `descarga`, `preprocesameinto`, y `procesamiento`.
+
+**Descarga:**
+
+Para descargar información se utiliza datos abiertos.
+
+```python
+from sodapy import Socrata
+```
+
+**Preprocesamiento y Procesamiento:**
+
+Se instalan e importan las siguientes librerías necesarias para el preprocesamiento y procesamiento de datos.
+
+```
+pip install --upgrade nbformat
+pip install plotly
+pip install pandas
+pip install matplotlib
+pip install plotly
+```
+
+```python
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+import plotly.express as px
+import nbformat
+```
+
+#### 3. Datos
+
+En la carpeta `datos` se guarda el modelo entrenado y todos los archivos CSV generados durante el trabajo.
+
+- `modelo_cluster.pkl`
+- `processed`
+- `raw`
+
+---
 
 ## _GRÁFICOS_
 En el proceso pudimos encontrar la siguiente información con los gráficos adjuntos:
