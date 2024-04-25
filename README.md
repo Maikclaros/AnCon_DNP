@@ -1,181 +1,95 @@
-# **Análisis Contratos Electronicos (SECOP 2) - Departamento de Planeación Nacional "DNP"** 
-## _INTRODUCCIÓN_
-Uno de los propósitos de aplicar analítica en las bases de datos de contratos electrónicos en Colombia:
+# Análisis Contratos Electrónicos (SECOP 2) - Departamento de Planeación Nacional "DNP"
 
-1. Observar tendencias y acciones que emprende una entidad pública para su funcionamiento.
-2. Identificar incrementos o decrementos en contratos para cumplimiento de su quehacer institucional.
-3. Determinar si la gestión administrativa es óptima de acuerdo con su andamiaje y contratación pública.
-4. Identificar concentración de recursos por procesos de contratación y posibles cifras que afectan la tendencia de lo contratado por una entidad pública.
+## INTRODUCCIÓN
 
-Lo anteriores numerales nos permite situar en que podemos enfocar esta revisión preliminar de los datos de contratación electrónica y siendo específicos en el Departamento Nacional de Planeación.
+Uno de los propósitos de aplicar analítica en las bases de datos de contratos electrónicos en Colombia es observar tendencias y acciones que emprende una entidad pública para su funcionamiento, identificar incrementos o decrementos en contratos para cumplimiento de su quehacer institucional, determinar si la gestión administrativa es óptima de acuerdo con su andamiaje y contratación pública, y identificar concentración de recursos por procesos de contratación y posibles cifras que afectan la tendencia de lo contratado por una entidad pública.
 
-Es importante distinguir que la herramienta por excelencia en donde se puede extraer toda la información para lograr este análisis es el SECOP II: "Es la nueva versión del SECOP (Sistema Electrónico de Contratación Pública) para pasar de la simple publicidad a una plataforma transaccional que permite a Compradores y Proveedores realizar el Proceso de Contratación en línea.  
+Es importante distinguir que la herramienta por excelencia en donde se puede extraer toda la información para lograr este análisis es el SECOP II, el cual permite a compradores y proveedores realizar el proceso de contratación en línea, asegurando la trazabilidad y la transparencia de la gestión contractual.
 
-Desde su cuenta, las Entidades Estatales (Compradores) pueden crear y adjudicar Procesos de Contratación, registrar y hacer seguimiento a la ejecución contractual. Los Proveedores también pueden tener su propia cuenta, encontrar oportunidades de negocio, hacer seguimiento a los Procesos y enviar observaciones y Ofertas..."
-De igual manera es importante resaltar que "asegura la trazabilidad y la transparencia de la Gestión contractual. Los proveedores son activos ya que deben registrarse y tener interacción con las Entidades Estatales a través del sistema y pueden solicitar informes acerca del proceso que les interesa y para esto cuentan con el clasificador de bienes y servicios"
+Dado el contexto, en que las entidades de orden público y que integran el Presupuesto General de la Nación, es decir que administran recursos públicos, es importante identificar que el registro de la información cumple con los requerimientos para todos los procesos contractuales y esto se identifican desde una correcta planificación en la elaboración del Plan Anual de Adquisiciones (PAA).
 
-Fuente: https://www.colombiacompra.gov.co/ciudadanos/preguntas-frecuentes/secop-ii
+## OBJETIVO
 
-Dado el contexto, en que las entidades de orden público y que integran el Presupuesto General de la Nación, es decir que administran recursos públicos, es importante identificar que el registro de la información cumple con los requerimientos para todos los procesos contractuales y esto se identifican desde una correcta planificación en la elaboración del Plan Anual de Adquisiciones (PAA) - " es una oportunidad para empezar a implementar y hacer uso del SECOP II en su Entidad Estatal. Para el efecto, debe registrar la Entidad Estatal y los usuarios encargados de elaborar, aprobar y publicar el PAA.
+Aplicar un análisis exploratorio de la información de contratos existentes en el sistema electrónico de contratación para las vigencias 2020 al 2023 del Departamento Nacional de Planeación, el cual permitirá identificar concentración de número de contratos y recursos adjudicados para efectuar controles y evidenciar un control previo, durante y posterior al uso de los dineros públicos, esto brindará un enfoque analítico por clusters al aplicar desarrollos como aplicaciones y/o estándares de programación para analizar un volumen de datos como lo son los contratos públicos en el sistema de contratación estatal en Colombia.
 
-La funcionalidad del PAA en el SECOP II permite hacer un seguimiento cercano a su planeación y ejecución, y tener visible las diferentes versiones del PAA para hacer seguimiento a los cambios realizados durante el año".
+## INSTALACIONES BÁSICAS
 
-Fuente: https://www.colombiacompra.gov.co/plan-anual-de-adquisiciones/que-es-el-plan-anual-de-adquisiciones
+1. Clona el repositorio:
 
-Una vez, la acción de planificación correcta las entidades deben garantizar una correcta ejecución del PAA y un correcto diligenciamiento de los procesos contractuales.
+    ```bash
+    git clone https://github.com/tu_usuario/tu_proyecto.git
+    ```
 
-Es por eso por lo que, en este análisis exploratorio, se debe accionar en revisión de datos incompletos, aproximación con otras variables para identificar número de contratos por año, concentración de contratos por modalidad y tipo y de igual manera utilizar medidas de tendencia central para distinguir procesos contractuales que estén por encima de la media y enfocarse en el ejercicio de transparencia y gestión administrativa del DNP.
+2. Instala las dependencias:
+    
+   ```bash
+    pip install -r requirements.txt
+    ```
 
-Adicional al análisis que se puede enfocar por número de contratos, es indispensable identificar como los recursos públicos son manejados acorde a las situaciones de respuesta institucional y misional como lo es el Departamento Nacional de Planeación, es por esto que evidenciaremos la concentración de recursos por modalidad de contratación y su respectivo peso porcentual para identificar situaciones atípicas o evidenciar que corresponden los contratos con mayores recursos asignados. De igual manera, demostrar que las asignaciones presupuestales que tiene una entidad pública como el caso de recursos de funcionamiento e inversión puede ser limitados y no es necesario aplicar ejercicios de proyecciones, sino de priorización de gasto y cumplimiento institucional.
+## EJECUCIÓN
 
-Dado lo anterior, se hará una serie de pasos que permita dar claridad de las acciones exploratorias y analíticas que se efectúan a los datos de los contratos de las vigencias 2020 a 2023.
+### Ejecución de la API
 
-## _OBJETIVO_
-Aplicar un análisis exploratorio de la información de contratos existentes en el sistema electrónico de contratación para las vigencias 2020 al 2023 del Departamento Nacional de Planeación, el cual permitirá identificar concentración de número de contratos y recursos adjudicados para efectuar controles y evidenciar un control previo, durante y posterior al uso de los dineros públicos.
+Para ejecutar la API, sigue estos pasos:
 
-## _DESCRIPCIÓN_
-En el proyecto realizado, se pretende hacer un análisis de los contratos electrónicos en el SECOP II durante los años 2020 al 2023.
+1. Dirígete a la carpeta `app`.
+2. Ejecuta el archivo `main.py`.
+3. Abre tu navegador web y navega a la dirección `http://127.0.0.1:5000`.
+4. Ingresa los datos solicitados en la interfaz de la API.
 
+### Ejecución del Pipeline
 
-## _INSTALACIONES BÁSICAS_
-1. Clona el repositorio: 'https://github.com/Maikclaros/AnCon_Mintic.git' y se selecciona 
-    ```Python
-   > ('../AnCon_DNP/codigo/preprocesamiento/Procesamiento.ipynb')
-2. Instala la dependencia 'nbformat': 
-    ```Python
-    pip install --upgrade nbformat
-3. Instala la dependencia 'plotly': 
-    ```Python
-    pip install plotly
+Para ejecutar el Pipeline, sigue estos pasos:
 
-## _EJECUCIÓN_
-**Librerías Utilizadas:**
-- Flask: Para el desarrollo de la aplicación web.
-- Joblib: Para guardar y cargar modelos entrenados.
-- Pandas: Para manipulación de datos.
-- DBSCAN: Algoritmo de clustering 
-- KMeans: Algoritmo de clustering 
-- SimpleImputer: Para imputar valores faltantes en los datos.
-- StandardScaler: Para estandarizar las características numéricas.
-- OneHotEncoder: Para codificar variables categóricas.
-- ColumnTransformer: Para aplicar transformaciones específicas a columnas seleccionadas.
-- Os: Para operaciones relacionadas con el sistema operativo.
-- Numpy: Para operaciones matemáticas y manipulación de matrices.
-- KneeLocator: Para encontrar el “codo” en una gráfica.
-- Matplotlib: Para visualización de datos.
-- Sklearn: Biblioteca de aprendizaje automático
+1. Dirígete a la carpeta `codigo/modelado`.
+2. Abre el archivo `Pipeline.ipynb`.
+    - Este cuaderno ejecuta un procesamiento de los datos, transformaciones, entrenamiento del modelo, y proporciona gráficos y estadísticas.
+3. Ejecuta todo el cuaderno para realizar el proceso completo.
+
+### Ejecución del Test
+
+Para verificar el funcionamiento del Pipeline, sigue estos pasos:
+
+1. Abre el archivo `test.ipynb`.
+2. Proporciona los datos solicitados para ejecutar el test.
 
 ### Proyecto de Modelado y Preprocesamiento de Datos
 
-Este proyecto consta de tres carpetas principales: `app`, `código`, y `datos`. Cada una contiene componentes específicos para el desarrollo, modelado y preprocesamiento de datos.
+El proyecto se estructura en las siguientes carpetas principales:
+
+- `app`: Contiene el código para la aplicación desarrollada.
+- `código`: Dividido en secciones de `Modelado` y `Preprocesamiento`.
+  - **Modelado**: Contiene el código para construir el pipeline y realizar pruebas sobre el modelo. Incluye la generación de clusters para segmentar la información de los contratos.
+  - **Preprocesamiento**: Incluye archivos para la descarga, preprocesamiento y procesamiento de los datos.
+- `datos`: Contiene el modelo entrenado y todos los archivos generados durante el trabajo.
+- `documentación`: Aquí se encuentra el informe final del proyecto, que incluye todas las observaciones, análisis y conclusiones obtenidas a lo largo del trabajo realizado.
 
 ---
 
-#### 1. App
+## GRÁFICOS
 
-La carpeta `app` contiene el código para la aplicación web desarrollada utilizando Flask. Permite interactuar con el modelo entrenado y realizar consultas sobre los datos.
-
-
-```python
-from flask import Flask, jsonify, render_template, request
-import joblib
-import pandas as pd
-```
-
-#### 2. Código
-
-La carpeta `código` está dividida en 3 secciones principales: `Modelado` y `Preprocesamiento`.
-
-##### Modelado
-
-En la sección de `Modelado`, se encuentra el código para construir el pipeline y realizar pruebas sobre el modelo.
-
-**Librerías Utilizadas en el Pipeline:**
-
-
-```python
-import pandas as pd
-from sklearn.cluster import DBSCAN, KMeans
-from sklearn.pipeline import Pipeline
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler, OneHotEncoder
-from sklearn.compose import ColumnTransformer
-import os
-import joblib
-import numpy as np
-from kneed import KneeLocator
-import matplotlib.pyplot as plt
-```
-
-**Test:**
-
-Para probar el pipeline construido se necesitan las librerías joblib y pandas, las cuales se cargaron previamente.
-
-##### Preprocesamiento
-
-La sección de `Preprocesamiento` está organizada en tres archivos: `descarga`, `preprocesameinto`, y `procesamiento`.
-
-**Descarga:**
-
-Para descargar información se utiliza datos abiertos.
-
-```python
-from sodapy import Socrata
-```
-
-**Preprocesamiento y Procesamiento:**
-
-Se instalan e importan las siguientes librerías necesarias para el preprocesamiento y procesamiento de datos.
-
-```
-pip install --upgrade nbformat
-pip install plotly
-pip install pandas
-pip install matplotlib
-pip install plotly
-```
-
-```python
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-import plotly.express as px
-import nbformat
-```
-
-#### 3. Datos
-
-En la carpeta `datos` se guarda el modelo entrenado y todos los archivos CSV generados durante el trabajo.
-
-- `modelo_cluster.pkl`
-- `processed`
-- `raw`
-
----
-
-## _GRÁFICOS_
 En el proceso pudimos encontrar la siguiente información con los gráficos adjuntos:
     
-    1. Número de contratos por año
-    2. Número de contratos por periodo
-    3. Número de contratos por Estado y año
-    4. Número de contratos por modalidad y año
-    5. Número de contratos por tipo y año
+1. Número de contratos por año.
+2. Número de contratos por periodo.
+3. Número de contratos por Estado y año.
+4. Número de contratos por modalidad y año.
+5. Número de contratos por tipo y año.
 
-## _MAYOR INFORMACIÓN_
-Para mayor información sobre los contratos y proceso de adjudicación de los mismos:
+Estos gráficos se encuentran disponibles en la carpeta `documentación/graficas` del proyecto.
+
+## MAYOR INFORMACIÓN
+
+Para mayor información sobre los contratos y proceso de adjudicación de los mismos, puedes consultar las siguientes fuentes:
 
 * [Preguntas Frecuentes](https://www.colombiacompra.gov.co/ciudadanos/preguntas-frecuentes/secop-ii)
 * [Plan Anual de Adquisiciones](https://www.colombiacompra.gov.co/ciudadanos/preguntas-frecuentes/secop-ii)
 
-## _CRÉDITOS_
+## CRÉDITOS
 
-### Desarrolladores: 
+### Desarrolladores
 
 - Michael Claros (@Maikclaros)
-- Karen Henríquez (@karenhenriquez99)
 - José Sebastián Cubillos (@SejeroCuco)
+- Karen Henríquez (@karenhenriquez99)
 - Daniela Morales (@danimo92)
-
-## _ESTADO DEL PROYECTO_
-En desarrollo. Se aceptan contribuciones y sugerencias
